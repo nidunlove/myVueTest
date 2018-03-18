@@ -2,7 +2,7 @@
 # myVueTest
 我的vue练习
 
-#本地安装
+##本地安装
 
 cnpm install vue -g  
 
@@ -28,7 +28,7 @@ vue init webpack my-vue-test
 
 //全选yes 会安装卡顿，试了两次，暂时不安装，原因之后再研究。
 
-#安装依赖，并运行到开发环境
+##安装依赖，并运行到开发环境
 
 cd my-vue-test
 
@@ -40,7 +40,7 @@ cnpm run build
 
 打开浏览器访问http://localhost:8080/，完成。
 
-#上传到github
+##上传到github
 
 登录并新建仓库，编辑readme。
 
@@ -66,18 +66,4 @@ git reset （需要撤销，此可撤销）
 
 git push origin master
  
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
->>>>>>> ee28a436633c90c49b5ab6f1dbd5256c9b867226
+报了很多错，一步步解决了.....
