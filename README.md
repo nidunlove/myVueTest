@@ -1,5 +1,8 @@
 # myVueTest
 我的vue练习
 
-cnpm install vue -g <br />
+本地安装
+
+cnpm install vue -g  
+
 vue init webpack my-vue-test
