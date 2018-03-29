@@ -67,3 +67,23 @@ git reset （需要撤销，此可撤销）
 git push origin master
  
 报了很多错，一步步解决了.....
+
+## 再次提交 2018.03.29
+
+参考：https://www.cnblogs.com/springlight/p/6282152.html
+
+1.打开GitBase
+
+2.切换到项目文件
+
+将本地文件添加到本地缓存库和提交到本地分支，如下命令
+
+3.git add .      //将所有的本地文件提交到缓存中；后面的 . 代表所有文件；
+
+4.git commit -m "commit all file"  //将所有文件提交到本地库中
+
+提交本地到远程库
+
+5.$ git push -u origin master //第一次提交 添加命令参数 -u 确保关联本地库和远程库
+
+6.$ git push origin master //非第一次提交使用此命令即可
