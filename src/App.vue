@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <!-- 切换效果，需要加其他东西，否则不明显 -->
+    <!-- <transition name="fade"> -->
+      <router-view >
+      </router-view>
+    <!-- </transition> -->
   </div>
 </template>
 

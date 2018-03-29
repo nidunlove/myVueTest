@@ -4,22 +4,28 @@
     <h2>Essential Links</h2>
     <ul>
       <li>
-        <a
+        <!-- <a
           href="https://vuejs.org"
           target="_blank"
         >
           Core Docs
-        </a>
+        </a> -->
+        <router-link to="/Toolbar">
+        Toolbar
+        </router-link>
       </li>
       <li>
-        <a
+        <!-- <a
           href="https://forum.vuejs.org"
           target="_blank"
         >
           Forum
-        </a>
+        </a> -->
+        <button @click="goHome">
+          goHome
+        </button>
       </li>
-      <li>
+      <!-- <li>
         <a
           href="https://chat.vuejs.org"
           target="_blank"
@@ -43,9 +49,9 @@
         >
           Docs for This Template
         </a>
-      </li>
+      </li> -->
     </ul>
-    <h2>Ecosystem</h2>
+    <!-- <h2>Ecosystem</h2>
     <ul>
       <li>
         <a
@@ -79,7 +85,7 @@
           awesome-vue
         </a>
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
@@ -90,7 +96,22 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  methods:{
+                goHome:function(){
+                    // if(num!=''){this.a+=num}
+                    // else{this.a++}
+                    // 字符串
+                    this.$router.push('/Home')
+
+                    // 对象
+                    // this.$router.push({ path: '/home/first' })
+
+                    // 命名的路由
+                    // this.$router.push({ name: 'home', params: { userId: wise }})
+                }
+            }
+
 }
 </script>
 
