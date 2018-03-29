@@ -36,9 +36,10 @@ cnpm install
 
 cnpm run dev
 
-cnpm run build
+cnpm run build（注意修改 config/index.js 的assetsPublicPath路径）
 
-打开浏览器访问http://localhost:8080/，完成。
+打开浏览器访问http://localhost:8080/，开发环境。
+打开浏览器访问http://localhost:8080/dist/index.html，线上环境。
 
 ##上传到github
 
