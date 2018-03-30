@@ -2,7 +2,7 @@
 # myVueTest
 我的vue练习
 
-##本地安装
+## 本地安装
 
 cnpm install vue -g  
 
@@ -28,7 +28,7 @@ vue init webpack my-vue-test
 
 //全选yes 会安装卡顿，试了两次，暂时不安装，原因之后再研究。
 
-##安装依赖，并运行到开发环境
+## 安装依赖，并运行到开发环境
 
 cd my-vue-test
 
@@ -41,7 +41,7 @@ cnpm run build（注意修改 config/index.js 的assetsPublicPath路径）
 打开浏览器访问http://localhost:8080/，开发环境。
 打开浏览器访问http://localhost:8080/dist/index.html，线上环境。
 
-##上传到github
+## 上传到github
 
 登录并新建仓库，编辑readme。
 
@@ -73,18 +73,62 @@ git push origin master
 
 参考：https://www.cnblogs.com/springlight/p/6282152.html
 
-1.打开GitBase
+1. 打开GitBase
 
-2.切换到项目文件
+2. 切换到项目文件
 
 将本地文件添加到本地缓存库和提交到本地分支，如下命令
 
-3.git add .      //将所有的本地文件提交到缓存中；后面的 . 代表所有文件；
+3. git add .      //将所有的本地文件提交到缓存中；后面的 . 代表所有文件；
 
-4.git commit -m "commit all file"  //将所有文件提交到本地库中
+4. git commit -m "commit all file"  //将所有文件提交到本地库中
 
 提交本地到远程库
 
-5.$ git push -u origin master //第一次提交 添加命令参数 -u 确保关联本地库和远程库
+5. $ git push -u origin master //第一次提交 添加命令参数 -u 确保关联本地库和远程库
 
-6.$ git push origin master //非第一次提交使用此命令即可
+6. $ git push origin master //非第一次提交使用此命令即可
+
+## 添加axios 2018.03.30
+
+1. cnpm install axios
+
+2. 新建axios文件夹和文件，vue中引入
+
+参考：https://github.com/imcvampire/vue-axios
+
+Vue.use(VueAxios, axios);
+
+Vue.axios.get(api).then((response) => {//不知道为何无效
+  console.log(response.data)
+})
+
+this.axios.get(api).then((response) => {
+  console.log(response.data)
+})
+
+this.$http.get(api).then((response) => {
+  console.log(response.data)
+})
+
+3. 或者 参考：
+
+https://segmentfault.com/q/1010000007733865
+
+https://www.cnblogs.com/zhouyangla/p/6753673.html
+
+Vue.prototype.$ajax = axios;
+
+this.$ajax.get(URL)
+
+附：export，import ，export default是什么
+
+https://www.cnblogs.com/xiaotanke/p/7448383.html
+
+4. VUE全家桶系列学习
+
+https://blog.csdn.net/zhenghao35791/article/details/67639415
+
+https://blog.csdn.net/qq_33295794/article/details/79024915
+
+

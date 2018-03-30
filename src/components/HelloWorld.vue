@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
+    <h2>作者：{{author}}</h2>
     <h2>魏静是个傻子</h2>
     <ul>
       <li>
@@ -111,7 +112,14 @@ export default {
                     // 命名的路由
                     // this.$router.push({ name: 'home', params: { userId: wise }})
                 }
-            }
+            },
+    computed: {//将状态映射到组件
+      author () {
+        // console.log(this.$store);
+        // return this.$store.state.author
+         return this.$store.state.userName;
+      }
+    }
 
 }
 </script>
