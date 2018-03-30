@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <h2>作者：{{author}}</h2>
-    <h2>魏静是个傻子</h2>
+    <h2>{{content}}</h2>
     <ul>
       <li>
         <!-- <a
@@ -13,7 +13,7 @@
           Core Docs
         </a> -->
         <router-link to="/Toolbar">
-        Toolbar
+        二级路由Toolbar
         </router-link>
       </li>
       <li>
@@ -24,8 +24,13 @@
           Forum
         </a> -->
         <button @click="goHome">
-          goHome
+          平级路由 Home
         </button>
+      </li>
+      <li>
+        <router-link to="/VuexTest">
+        二级路由 VuexTest
+        </router-link>
       </li>
       <!-- <li>
         <a
@@ -118,6 +123,9 @@ export default {
         // console.log(this.$store);
         // return this.$store.state.author
          return this.$store.state.userName;
+      },
+      content(){
+        return this.$store.state.content;
       }
     }
 

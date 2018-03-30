@@ -1,10 +1,11 @@
 <template>
     <div id="notes-list">
+        <h3>三级页面 notelist</h3>
         <div id="list-header">
             <h2>{{name}}|username</h2>
             <div class="btn-group">
-                <button type="button" class="btn btn-primary" @click="show(all)">所有笔记</button>
-                <button type="button" class="btn btn-primary" @click="show(favor)">喜欢的</button>
+                <button type="button" class="btn btn-primary" @click="myshow('all')">所有笔记</button>
+                <button type="button" class="btn btn-primary" @click="myshow('favor')">喜欢的</button>
             </div>
         </div>
         <div class="container">
@@ -29,11 +30,13 @@
                 }]
             }
         },
-        methosd:{
-            show:function(type){
+        methods:{
+            myshow:function(type){
                 console.log(type);
+                alert(type);
             }
         }
+        
     }
 </script>
 <style>

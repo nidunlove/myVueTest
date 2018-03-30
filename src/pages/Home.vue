@@ -4,10 +4,10 @@
 	   
 	    <div>
 		    <router-link to="/">
-		        router-link to="/"
-		        跳转
+		        回首页
 		    </router-link>
 		</div>
+		<div>axios请求数据</div>
 		 <div>
 	    	<h3>天气：</h3>
 	    	<div>{{weather}}</div>
@@ -27,12 +27,7 @@ export default {
     getWeatherData(){
     	console.log(this);
     	// console.log(this.axios.myaxios);
-    	// axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=your_api_key")
-     //    .then(response => {
 
-     //        this.results = response.data.resultes
-
-     //    })
         // console.log(this.$ajax);
         // 免费开放接口 API 网址
         // https://blog.csdn.net/c__chao/article/details/78573737

@@ -1,41 +1,40 @@
 <template>
     <div id="toolbar">
-      <h2>toolbar Tittle</h2>
+      <h2>二级路由头部</h2>
       <ul>
         <li>
           <router-link to="/">
-            router-link to="/"
-            跳转
+            回首页
           </router-link>
         </li>
         <li>
           <router-link to="/Toolbar">
-            router-link to="/Toolbar"
-            跳转
+            本页
           </router-link>
         </li>
         <li>
           <router-link to="/Editor">
-            router-link to="/Editor"
-            跳转
+            三级页面 Editor
           </router-link>
         </li>
         <li><router-link to="/List">
-            router-link to="/List"
-            跳转
+            三级页面 List
+          </router-link></li>
+        <li><router-link to="/NoteList">
+            三级页面 NoteList
+          </router-link></li>
+        <li><router-link to="/User">
+            三级页面 User
           </router-link></li>
       </ul>
       
-      <h3>click事件点击</h3>
       <ul>
-        <li><i @click="addNote" class="glyphicon glyphicon-plus">addNote</i></li>
-        <li><i @click="tooglefavorite" class="glyphicon glyphicon-star">tooglefavorite</i></li>
-        <li><i @click="deleteNote" class="glyphicon glyphicon-remove">deleteNote</i></li>
+        <li><i @click="addNote('aa')" class="glyphicon glyphicon-plus">click事件点击</i></li>
       </ul>
       <hr />
-      <h3>toolbar SUB - router-view/ </h3>
+      <h3>以下 三级路由  </h3>
       <transition name="slide">
-      <router-view ></router-view>
+        <router-view ></router-view>
       </transition>
     </div>
 </template>
@@ -48,8 +47,9 @@ export default {
     }
   },
   methods:{
-    addNote:function(){
+    addNote:function(parm){
       console.log('addNote');
+      alert("click事件点击"+parm);
     }, 
     tooglefavorite:function(){
       console.log('tooglefavorite');
@@ -61,6 +61,10 @@ export default {
 }
 </script>
 <style>
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
   #toolbar i {
   font-size: 30px;
   margin-bottom: 35px;

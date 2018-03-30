@@ -6,7 +6,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
 	//定义状态
   state: {
-    userName : 'NiDun'
+    userName : 'NiDun',
+    content: "魏静是个傻子a"
   }
 })
 

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    APP.vue
     <img src="./assets/logo.png">
     <!-- 切换效果，需要加其他东西，否则不明显 -->
     <!-- <transition name="fade"> -->

@@ -1,7 +1,8 @@
 <template>
     <div id="note-editor">
-      <h3>Editor.vue</h3>
-      <div>textarea:<textarea  v-model="editNote"></textarea></div>
+      <h3>三级页面 Editor</h3>
+      <div><span>输入的值:</span><span>{{editNote}}</span></div>
+      <div>输入框:<textarea  v-model="editNote" style="border:1px solid red"></textarea></div>
     </div>
 </template>
 <script>
