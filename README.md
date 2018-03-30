@@ -2,6 +2,8 @@
 # myVueTest
 我的vue练习
 
+DEMO可见地址：https://nidunlove.github.io/myVueTest/dist/index.html
+
 ## 本地安装
 
 cnpm install vue -g  
