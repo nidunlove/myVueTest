@@ -43,6 +43,14 @@ cnpm run build（注意修改 config/index.js 的assetsPublicPath路径）
 打开浏览器访问http://localhost:8080/，开发环境。
 打开浏览器访问http://localhost:8080/dist/index.html，线上环境。
 
+## 安装vuex
+
+参考：https://blog.csdn.net/u014196765/article/details/78022065?locationNum=9&fps=1
+
+1. npm install vuex --save-dev
+
+2. 在项目中引用vuex。建一个文件 叫 store.js
+
 ## 上传到github
 
 登录并新建仓库，编辑readme。
@@ -132,5 +140,17 @@ https://www.cnblogs.com/xiaotanke/p/7448383.html
 https://blog.csdn.net/zhenghao35791/article/details/67639415
 
 https://blog.csdn.net/qq_33295794/article/details/79024915
+
+5. 组件通信
+ 
+ 插件引用
+ 
+ 树形
+ 父子组件
+ 组件调用
+ 公用组件
+
+6. 常用git命令
+https://www.cnblogs.com/chenwolong/p/GIT.html
 
 
